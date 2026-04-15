@@ -1,0 +1,120 @@
+/* ---------- Global reset and base styles ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(135deg, #fdf6e3 0%, #ffe0b2 100%);
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ---------- App wrapper (centers everything on the page) ---------- */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* ---------- Gallery card ---------- */
+.gallery {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 28px;
+  color: #d84315;
+  margin-bottom: 6px;
+}
+
+.gallery-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* ---------- Image card ---------- */
+.image-card {
+  margin-bottom: 20px;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-description {
+  margin-top: 14px;
+  font-size: 16px;
+  color: #444;
+  font-style: italic;
+  min-height: 48px;
+}
+
+/* ---------- Navigation buttons ---------- */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.nav-button {
+  background-color: #ff7043;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 10px rgba(255, 112, 67, 0.35);
+}
+
+.nav-button:hover:not(:disabled) {
+  background-color: #f4511e;
+  transform: translateY(-1px);
+}
+
+.nav-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.counter {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  margin-top: 24px;
+  font-size: 13px;
+  color: #666;
+}
