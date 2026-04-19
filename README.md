@@ -98,7 +98,8 @@ Make sure you have **Node.js** (v18 or higher) installed.
 > _Add a screenshot of the running app here._
 
 ```
-![Recipe Gallery Screenshot](./screenshot.png)
+<img width="1920" height="1079" alt="Screenshot 2026-04-19 at 16 58 37" src="https://github.com/user-attachments/assets/2c7afc25-447f-4c0b-ae33-325efd102d0f" />
+
 ```
 
 ---
